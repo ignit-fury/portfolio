@@ -1,0 +1,97 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: var(--space-40) var(--space-8);
+  position: relative;
+}
+
+.hero-content {
+  max-width: 1200px;
+}
+
+.hero-line {
+  font-family: var(--font-display);
+  font-size: clamp(64px, 12vw, 166px);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: -0.05em;
+}
+
+.hero-outline {
+  -webkit-text-stroke: 2px var(--color-foreground-white);
+  color: transparent;
+}
+
+.hero-sub {
+  margin-top: var(--space-10);
+  display: flex;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.hero-subtitle {
+  font-size: 16px;
+  color: var(--color-muted-text);
+}
+
+.hero-location {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: var(--color-subtle-text);
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: var(--space-10);
+  left: var(--space-8);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.scroll-label {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--color-subtle-text);
+  writing-mode: vertical-rl;
+}
+
+.scroll-line {
+  width: 1px;
+  height: 60px;
+  background: var(--color-grid-line-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.scroll-line::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--color-orange-accent);
+  animation: scrollDown 2s infinite;
+}
+
+@keyframes scrollDown {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    padding: var(--space-32) var(--space-4);
+  }
+  
+  .hero-line {
+    font-size: clamp(48px, 10vw, 128px);
+  }
+  
+  .hero-scroll {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+.footer {
+  border-top: 1px solid var(--color-grid-line-border);
+  padding: var(--space-8);
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-name {
+  font-size: 12px;
+  letter-spacing: 1.2px;
+  color: var(--color-subtle-text);
+}
+
+.footer-tagline {
+  font-size: 12px;
+  color: var(--color-subtle-text);
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+}
