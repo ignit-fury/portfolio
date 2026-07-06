@@ -134,9 +134,9 @@ const Contact = () => {
         </form>
         
         <div className="contact-links">
-          <a href="https://github.com/yourusername" className="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://linkedin.com/in/yourusername" className="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          <a href="https://twitter.com/yourusername" className="contact-link" target="_blank" rel="noopener noreferrer">Twitter</a>
+          <a href="https://github.com/ignit-fury" className="contact-link" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/prem-patel-9742aa388/" className="contact-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://www.instagram.com/p.prem._/" className="contact-link" target="_blank" rel="noopener noreferrer">Instagram</a>
         </div>
       </div>
     </section>

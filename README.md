@@ -1,81 +1,122 @@
-# Prem Patel - Developer Portfolio
+# Prem Patel — Developer Portfolio
 
-A modern, dark-themed developer portfolio built with Express.js, Node.js, and React.
+A high-contrast, dark-first developer portfolio built with **React**, **Express.js**, and **Node.js**.
 
-## Tech Stack
+![Portfolio](https://img.shields.io/badge/Status-Active-brightgreen)
+![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-20-339933?logo=node.js)
+![Express](https://img.shields.io/badge/Express-4-000000?logo=express)
 
-- **Backend:** Express.js, Node.js
-- **Frontend:** React.js
-- **Styling:** CSS3 with CSS Variables
-- **Fonts:** Cabinet Grotesk, JetBrains Mono
+---
+
+## Live Demo
+
+**[View Portfolio →](https://prempatel.dev)**
+
+---
 
 ## Features
 
-- Dark theme with orange accent (#f97316)
-- Grid overlay design
-- Responsive layout
+- Dark theme with orange accent (`#f97316`)
+- Grid overlay with sharp, structural aesthetic
+- Responsive design (mobile, tablet, desktop)
 - Smooth scroll animations
-- Project showcase with images
-- Skills section
-- Contact form
+- Lazy-loaded project images
+- Contact form with validation
+- Active navigation state on scroll
+- Mobile hamburger menu
+- Scroll-to-top button
+- Error boundaries for fault tolerance
 
-## Installation
+---
 
-1. Clone the repository
-2. Install dependencies:
-   ```bash
-   npm run install-all
-   ```
+## Tech Stack
 
-## Running the Application
+| Layer | Technology |
+|-------|-----------|
+| Frontend | React 18, CSS3, CSS Variables |
+| Backend | Express.js, Node.js |
+| Fonts | Cabinet Grotesk, JetBrains Mono |
+| Icons | Unicode / Custom SVG |
 
-### Development Mode
+---
+
+## Getting Started
 
 ```bash
+# Clone the repo
+git clone https://github.com/ignit-fury/portfolio.git
+cd portfolio
+
+# Install dependencies
+npm run install-all
+
+# Start dev server
 npm run dev
 ```
 
-This will start both the Express server (port 5000) and React dev server (port 3000).
+- React app → `http://localhost:3000`
+- Express API → `http://localhost:3001`
 
-### Production Mode
-
-1. Build the React app:
-   ```bash
-   npm run build
-   ```
-
-2. Start the server:
-   ```bash
-   npm start
-   ```
-
-The application will be available at `http://localhost:5000`
+---
 
 ## Project Structure
 
 ```
 portfolio/
-├── server/
-│   └── index.js          # Express server
 ├── client/
-│   ├── public/
-│   │   └── images/       # Project images
+│   ├── public/images/       # Project screenshots
 │   └── src/
-│       ├── components/    # React components
-│       └── styles/        # CSS files
-├── images/                # Source images
-├── package.json
-└── .env
+│       ├── components/      # React components
+│       │   ├── Navbar.js
+│       │   ├── Hero.js
+│       │   ├── Work.js      # ← Add projects here
+│       │   ├── About.js
+│       │   ├── Skills.js    # ← Add skills here
+│       │   ├── Contact.js
+│       │   ├── Footer.js
+│       │   ├── ScrollToTop.js
+│       │   ├── LazyImage.js
+│       │   └── ErrorBoundary.js
+│       └── styles/          # CSS files
+├── server/
+│   └── index.js             # Express server
+└── package.json
 ```
 
-## API Endpoints
+---
 
-- `GET /api/health` - Server health check
-- `GET /api/projects` - Get all projects
-- `GET /api/skills` - Get all skills
+## Adding a New Project
 
-## Customization
+Open `client/src/components/Work.js` and add to `projectsData`:
 
-- Update project data in `server/index.js`
-- Modify colors in `client/src/styles/index.css`
-- Add your own images to `client/public/images/`
+```js
+{
+  id: 5,
+  type: 'FULL-STACK APP',
+  title: 'Project Name',
+  description: 'Short description of your project.',
+  tags: ['React', 'Node.js', 'MongoDB'],
+  image: '/images/your-screenshot.png',
+  url: 'https://your-live-project.com'
+}
+```
+
+Then add your screenshot to `client/public/images/`.
+
+---
+
+## Contact
+
+| Platform | Link |
+|----------|------|
+| Email | [prem.patel9224@gmail.com](mailto:prem.patel9224@gmail.com) |
+| GitHub | [ignit-fury](https://github.com/ignit-fury) |
+| LinkedIn | [Prem Patel](https://www.linkedin.com/in/prem-patel-9742aa388/) |
+| Instagram | [p.prem._](https://www.instagram.com/p.prem._/) |
+
+---
+
+## License
+
+MIT © 2026 Prem Patel
