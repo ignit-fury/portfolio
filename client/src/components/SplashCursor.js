@@ -41,6 +41,7 @@ const SplashCursor = () => {
     };
 
     const onPointerDown = (e) => {
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
       spawn(e.clientX, e.clientY);
     };
 
@@ -57,8 +58,10 @@ const SplashCursor = () => {
         p.vx *= 0.92;
         p.vy *= 0.92;
         p.life -= 0.025;
+        const radius = Math.max(p.radius * p.life, 0);
+        if (radius <= 0) return;
         ctx.beginPath();
-        ctx.arc(p.x, p.y, p.radius * p.life, 0, Math.PI * 2);
+        ctx.arc(p.x, p.y, radius, 0, Math.PI * 2);
         ctx.fillStyle = p.color;
         ctx.globalAlpha = Math.max(p.life, 0);
         ctx.fill();

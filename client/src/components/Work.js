@@ -19,7 +19,7 @@ const projectsData = [
     title: 'FoodShareIt',
     description: 'Real-time food donation platform connecting donors with receivers, built with Node.js and MongoDB.',
     tags: ['Node.js', 'MongoDB', 'Express'],
-    image: '/images/heart-brew-home.webp',
+    image: '/images/work-foodshareit.svg',
     url: 'https://foodshareit.com'
   },
   {
@@ -28,8 +28,8 @@ const projectsData = [
     title: 'Auth App',
     description: 'Secure authentication application with protected routes and session management.',
     tags: ['React', 'Node.js', 'JWT'],
-    image: '/images/heart-brew-admin.webp',
-    url: 'https://authapp.example.com'
+    image: '/images/work-authapp.svg',
+    url: 'https://github.com/ignit-fury'
   },
   {
     id: 4,
@@ -37,8 +37,8 @@ const projectsData = [
     title: 'Diabetes Prediction',
     description: 'Machine learning model for predicting diabetes using Python and scikit-learn.',
     tags: ['Python', 'ML', 'scikit-learn'],
-    image: '/images/heart-brew-menu.webp',
-    url: 'https://github.com/yourusername/diabetes-prediction'
+    image: '/images/work-diabetes.svg',
+    url: 'https://github.com/ignit-fury/diabetes-prediction'
   }
 ];
 
@@ -105,6 +105,7 @@ const Work = () => {
                   <span className="tag" key={index}>{tag}</span>
                 ))}
               </div>
+              <div className="project-cta" aria-hidden="true">VIEW PROJECT →</div>
             </div>
             <div className="project-arrow" aria-hidden="true">→</div>
           </a>

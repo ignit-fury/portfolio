@@ -32,8 +32,8 @@ const About = () => {
             <span className="stat-label">YEARS CODING</span>
           </div>
           <div className="stat">
-            <span className="stat-number">5+</span>
-            <span className="stat-label">TECHNOLOGIES</span>
+            <span className="stat-number">8+</span>
+            <span className="stat-label">TOOLS &amp; FRAMEWORKS</span>
           </div>
         </div>
       </div>

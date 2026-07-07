@@ -107,6 +107,10 @@
   transform: translateX(4px);
 }
 
+.project-cta {
+  display: none;
+}
+
 @media (max-width: 768px) {
   .project-card {
     grid-template-columns: 1fr;
@@ -120,5 +124,13 @@
   
   .project-arrow {
     display: none;
+  }
+
+  .project-cta {
+    display: inline-block;
+    margin-top: var(--space-3);
+    font-size: 12px;
+    letter-spacing: 2px;
+    color: var(--color-orange-accent);
   }
 }

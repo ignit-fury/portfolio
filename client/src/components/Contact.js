@@ -29,7 +29,7 @@ const Contact = () => {
     }
     
     setErrors(newErrors);
-    return Object.keys(newErrors).length === 0;
+    return newErrors;
   };
 
   const handleChange = (e) => {
@@ -51,7 +51,12 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    if (!validateForm()) {
+    const newErrors = validateForm();
+    if (Object.keys(newErrors).length > 0) {
+      const firstInvalid = ['name', 'email', 'message'].find((f) => newErrors[f]);
+      if (firstInvalid) {
+        document.getElementById(firstInvalid)?.focus();
+      }
       return;
     }
     
@@ -82,46 +87,52 @@ const Contact = () => {
         </p>
         
         {submitSuccess && (
-          <div className="success-message">
-            Thank you! Your message has been sent successfully.
+          <div className="success-message" role="status" aria-live="polite">
+            Thanks! This portfolio form is in demo mode — your message wasn't actually sent. Reach me via the links below.
           </div>
         )}
         
         <form className="contact-form" onSubmit={handleSubmit}>
           <div className="form-group">
+            <label htmlFor="name" className="form-label">Name</label>
             <input
+              id="name"
               type="text"
               name="name"
-              placeholder="Your Name"
+              placeholder="Jane Doe"
               value={formData.name}
               onChange={handleChange}
               className={errors.name ? 'error' : ''}
             />
-            {errors.name && <span className="error-text">{errors.name}</span>}
+            {errors.name && <span className="error-text" role="alert">{errors.name}</span>}
           </div>
-          
+
           <div className="form-group">
+            <label htmlFor="email" className="form-label">Email</label>
             <input
+              id="email"
               type="email"
               name="email"
-              placeholder="Your Email"
+              placeholder="jane@example.com"
               value={formData.email}
               onChange={handleChange}
               className={errors.email ? 'error' : ''}
             />
-            {errors.email && <span className="error-text">{errors.email}</span>}
+            {errors.email && <span className="error-text" role="alert">{errors.email}</span>}
           </div>
-          
+
           <div className="form-group">
+            <label htmlFor="message" className="form-label">Message</label>
             <textarea
+              id="message"
               name="message"
-              placeholder="Your Message"
+              placeholder="Tell me about your project..."
               rows="5"
               value={formData.message}
               onChange={handleChange}
               className={errors.message ? 'error' : ''}
             />
-            {errors.message && <span className="error-text">{errors.message}</span>}
+            {errors.message && <span className="error-text" role="alert">{errors.message}</span>}
           </div>
           
           <button 
