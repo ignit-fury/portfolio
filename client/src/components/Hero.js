@@ -1,13 +1,47 @@
 import React from 'react';
+import SplitText from './SplitText';
 import '../styles/Hero.css';
 
 const Hero = () => {
   return (
     <section className="hero" aria-label="Hero section">
       <div className="hero-content">
-        <h1 className="hero-line" aria-label="I build digital experiences">I BUILD</h1>
-        <h1 className="hero-line" aria-hidden="true">DIGITAL</h1>
-        <h1 className="hero-line hero-outline" aria-hidden="true">EXPERIENCES.</h1>
+        <SplitText
+          text="I BUILD"
+          tag="h1"
+          className="hero-line"
+          splitType="chars"
+          delay={50}
+          duration={0.8}
+          ease="power3.out"
+          from={{ opacity: 0, y: 60 }}
+          to={{ opacity: 1, y: 0 }}
+          textAlign="left"
+        />
+        <SplitText
+          text="DIGITAL"
+          tag="h1"
+          className="hero-line"
+          splitType="chars"
+          delay={50}
+          duration={0.8}
+          ease="power3.out"
+          from={{ opacity: 0, y: 60 }}
+          to={{ opacity: 1, y: 0 }}
+          textAlign="left"
+        />
+        <SplitText
+          text="EXPERIENCES."
+          tag="h1"
+          className="hero-line hero-outline"
+          splitType="chars"
+          delay={50}
+          duration={0.8}
+          ease="power3.out"
+          from={{ opacity: 0, y: 60 }}
+          to={{ opacity: 1, y: 0 }}
+          textAlign="left"
+        />
       </div>
       <div className="hero-sub">
         <p className="hero-subtitle">Full-Stack Developer & UI Designer</p>
