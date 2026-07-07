@@ -37,6 +37,7 @@ const SplashCursor = () => {
           color,
         });
       }
+      if (!animationId) tick();
     };
 
     const onPointerDown = (e) => {
@@ -46,6 +47,10 @@ const SplashCursor = () => {
     const tick = () => {
       ctx.clearRect(0, 0, width, height);
       splashes = splashes.filter((p) => p.life > 0);
+      if (splashes.length === 0) {
+        animationId = null;
+        return;
+      }
       splashes.forEach((p) => {
         p.x += p.vx;
         p.y += p.vy;
@@ -65,7 +70,6 @@ const SplashCursor = () => {
     resize();
     window.addEventListener('resize', resize);
     window.addEventListener('pointerdown', onPointerDown);
-    tick();
 
     return () => {
       cancelAnimationFrame(animationId);

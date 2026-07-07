@@ -10,7 +10,7 @@ const projectsData = [
     title: 'Heart & Brew',
     description: 'Digital platform for a café featuring menu management, reservations, and admin dashboard.',
     tags: ['HTML', 'CSS', 'JavaScript'],
-    image: '/images/heart-brew-hero.png',
+    image: '/images/heart-brew-hero.webp',
     url: 'https://heartandbrew.com'
   },
   {
@@ -19,7 +19,7 @@ const projectsData = [
     title: 'FoodShareIt',
     description: 'Real-time food donation platform connecting donors with receivers, built with Node.js and MongoDB.',
     tags: ['Node.js', 'MongoDB', 'Express'],
-    image: '/images/heart-brew-home.png',
+    image: '/images/heart-brew-home.webp',
     url: 'https://foodshareit.com'
   },
   {
@@ -28,7 +28,7 @@ const projectsData = [
     title: 'Auth App',
     description: 'Secure authentication application with protected routes and session management.',
     tags: ['React', 'Node.js', 'JWT'],
-    image: '/images/heart-brew-admin.png',
+    image: '/images/heart-brew-admin.webp',
     url: 'https://authapp.example.com'
   },
   {
@@ -37,7 +37,7 @@ const projectsData = [
     title: 'Diabetes Prediction',
     description: 'Machine learning model for predicting diabetes using Python and scikit-learn.',
     tags: ['Python', 'ML', 'scikit-learn'],
-    image: '/images/heart-brew-menu.png',
+    image: '/images/heart-brew-menu.webp',
     url: 'https://github.com/yourusername/diabetes-prediction'
   }
 ];
