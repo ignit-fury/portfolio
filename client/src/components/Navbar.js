@@ -6,6 +6,11 @@ const Navbar = () => {
   const [activeSection, setActiveSection] = useState('');
 
   useEffect(() => {
+    document.body.style.overflow = isMenuOpen ? 'hidden' : '';
+    return () => { document.body.style.overflow = ''; };
+  }, [isMenuOpen]);
+
+  useEffect(() => {
     const handleScroll = () => {
       const sections = ['work', 'about', 'skills', 'contact'];
       const scrollPosition = window.scrollY + 200;
