@@ -9,6 +9,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
 import AnimatedContent from './components/AnimatedContent';
+import SplashCursor from './components/SplashCursor';
 import './styles/App.css';
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Footer />
         </AnimatedContent>
         <ScrollToTop />
+        <SplashCursor />
       </div>
     </ErrorBoundary>
   );

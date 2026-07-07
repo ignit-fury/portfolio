@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import LazyImage from './LazyImage';
+import TiltedCard from './TiltedCard';
 import '../styles/Work.css';
 
 const projectsData = [
@@ -86,11 +87,15 @@ const Work = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <LazyImage 
-              src={project.image} 
-              alt={`${project.title} preview`}
-              className="project-image"
-            />
+            <div className="project-image">
+              <TiltedCard className="project-tilt">
+                <LazyImage
+                  src={project.image}
+                  alt={`${project.title} preview`}
+                  className="project-image-fill"
+                />
+              </TiltedCard>
+            </div>
             <div className="project-info">
               <span className="project-type">{project.type}</span>
               <h3 className="project-title">{project.title}</h3>

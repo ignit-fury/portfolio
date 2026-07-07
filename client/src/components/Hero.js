@@ -1,10 +1,12 @@
 import React from 'react';
 import SplitText from './SplitText';
+import Aurora from './Aurora';
 import '../styles/Hero.css';
 
 const Hero = () => {
   return (
     <section className="hero" aria-label="Hero section">
+      <Aurora />
       <div className="grid-overlay" aria-hidden="true"></div>
       <div className="hero-content">
         <SplitText
