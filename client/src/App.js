@@ -8,6 +8,7 @@ import Skills from './components/Skills';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import ScrollToTop from './components/ScrollToTop';
+import AnimatedContent from './components/AnimatedContent';
 import './styles/App.css';
 
 function App() {
@@ -17,11 +18,21 @@ function App() {
         <div className="grid-overlay" aria-hidden="true"></div>
         <Navbar />
         <Hero />
-        <Work />
-        <About />
-        <Skills />
-        <Contact />
-        <Footer />
+        <AnimatedContent>
+          <Work />
+        </AnimatedContent>
+        <AnimatedContent>
+          <About />
+        </AnimatedContent>
+        <AnimatedContent>
+          <Skills />
+        </AnimatedContent>
+        <AnimatedContent>
+          <Contact />
+        </AnimatedContent>
+        <AnimatedContent>
+          <Footer />
+        </AnimatedContent>
         <ScrollToTop />
       </div>
     </ErrorBoundary>
