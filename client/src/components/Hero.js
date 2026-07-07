@@ -5,6 +5,7 @@ import '../styles/Hero.css';
 const Hero = () => {
   return (
     <section className="hero" aria-label="Hero section">
+      <div className="grid-overlay" aria-hidden="true"></div>
       <div className="hero-content">
         <SplitText
           text="I BUILD"

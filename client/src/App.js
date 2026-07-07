@@ -15,7 +15,6 @@ function App() {
   return (
     <ErrorBoundary>
       <div className="App">
-        <div className="grid-overlay" aria-hidden="true"></div>
         <Navbar />
         <Hero />
         <AnimatedContent>
