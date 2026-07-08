@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import LazyImage from './LazyImage';
 import TiltedCard from './TiltedCard';
+import ScrollStack, { ScrollStackItem } from './ScrollStack';
 import '../styles/Work.css';
 
 const projectsData = [
@@ -76,41 +77,50 @@ const Work = () => {
         <div className="section-line"></div>
       </div>
 
-      <div className="projects-grid" role="list">
+      <ScrollStack
+        useWindowScroll
+        className="work-scroll-stack"
+        itemDistance={80}
+        stackPosition="25%"
+        scaleEndPosition="8%"
+        baseScale={0.9}
+        itemScale={0.05}
+      >
         {projectsData.map((project) => (
-          <a 
-            href={project.url} 
-            key={project.id} 
-            className="project-card" 
-            role="listitem" 
-            aria-label={`Project: ${project.title}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="project-image">
-              <TiltedCard className="project-tilt">
-                <LazyImage
-                  src={project.image}
-                  alt={`${project.title} preview`}
-                  className="project-image-fill"
-                />
-              </TiltedCard>
-            </div>
-            <div className="project-info">
-              <span className="project-type">{project.type}</span>
-              <h3 className="project-title">{project.title}</h3>
-              <p className="project-desc">{project.description}</p>
-              <div className="project-tags">
-                {project.tags.map((tag, index) => (
-                  <span className="tag" key={index}>{tag}</span>
-                ))}
+          <ScrollStackItem key={project.id}>
+            <a 
+              href={project.url} 
+              className="project-card" 
+              role="listitem" 
+              aria-label={`Project: ${project.title}`}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <div className="project-image">
+                <TiltedCard className="project-tilt">
+                  <LazyImage
+                    src={project.image}
+                    alt={`${project.title} preview`}
+                    className="project-image-fill"
+                  />
+                </TiltedCard>
               </div>
-              <div className="project-cta" aria-hidden="true">VIEW PROJECT →</div>
-            </div>
-            <div className="project-arrow" aria-hidden="true">→</div>
-          </a>
+              <div className="project-info">
+                <span className="project-type">{project.type}</span>
+                <h3 className="project-title">{project.title}</h3>
+                <p className="project-desc">{project.description}</p>
+                <div className="project-tags">
+                  {project.tags.map((tag, index) => (
+                    <span className="tag" key={index}>{tag}</span>
+                  ))}
+                </div>
+                <div className="project-cta" aria-hidden="true">VIEW PROJECT →</div>
+              </div>
+              <div className="project-arrow" aria-hidden="true">→</div>
+            </a>
+          </ScrollStackItem>
         ))}
-      </div>
+      </ScrollStack>
     </section>
   );
 };

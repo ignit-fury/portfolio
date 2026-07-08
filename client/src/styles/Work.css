@@ -4,6 +4,46 @@
   gap: var(--space-4);
 }
 
+/* ScrollStack integration: use the page's native window scroll and let the
+   existing project cards provide their own visual styling. */
+.work-scroll-stack.scroll-stack-scroller {
+  height: auto;
+  overflow: visible;
+  transform: none;
+  will-change: auto;
+}
+
+.work-scroll-stack .scroll-stack-inner {
+  padding: 10vh 0 45rem;
+}
+
+.work-scroll-stack .scroll-stack-card {
+  height: auto;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  border: none;
+  transform: none;
+}
+
+.work-scroll-stack .scroll-stack-card:last-child {
+  margin-bottom: 0;
+}
+
+/* Larger, more prominent project cards so one reads clearly at a time */
+.work-scroll-stack .project-card {
+  min-height: 380px;
+  align-items: stretch;
+}
+
+.work-scroll-stack .project-image {
+  height: 100%;
+  min-height: 200px;
+}
+
 .project-card {
   display: grid;
   grid-template-columns: 200px 1fr 40px;
