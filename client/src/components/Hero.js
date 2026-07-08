@@ -35,7 +35,7 @@ const Hero = () => {
             textAlign="left"
           />
           <SplitText
-            text="EXPERIENCES."
+            text="EXPERIENCES ‎ "
             tag="span"
             className="hero-line-text hero-outline"
             splitType="chars"

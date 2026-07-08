@@ -23,7 +23,7 @@ app.get('/api/projects', (req, res) => {
       title: 'Heart & Brew',
       description: 'Digital platform for a café featuring menu management, reservations, and admin dashboard.',
       tags: ['HTML', 'CSS', 'JavaScript'],
-      image: '/images/heart-brew-hero.png'
+      image: '/images/heart-brew-hero.webp'
     },
     {
       id: 2,
@@ -31,7 +31,7 @@ app.get('/api/projects', (req, res) => {
       title: 'FoodShareIt',
       description: 'Real-time food donation platform connecting donors with receivers, built with Node.js and MongoDB.',
       tags: ['Node.js', 'MongoDB', 'Express'],
-      image: '/images/heart-brew-home.png'
+      image: '/images/foodshare.svg'
     },
     {
       id: 3,
@@ -39,7 +39,7 @@ app.get('/api/projects', (req, res) => {
       title: 'Auth App',
       description: 'Secure authentication application with protected routes and session management.',
       tags: ['React', 'Node.js', 'JWT'],
-      image: '/images/heart-brew-admin.png'
+      image: '/images/Ai-Faceless-Video-Generator.svg'
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ app.get('/api/projects', (req, res) => {
       title: 'Diabetes Prediction',
       description: 'Machine learning model for predicting diabetes using Python and scikit-learn.',
       tags: ['Python', 'ML', 'scikit-learn'],
-      image: '/images/heart-brew-menu.png'
+      image: '/images/work-diabetes.svg'
     }
   ];
   res.json(projects);
