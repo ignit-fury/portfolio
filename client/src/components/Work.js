@@ -16,7 +16,7 @@ const projectsData = [
   {
     id: 2,
     type: 'FULL-STACK APP',
-    title: 'FoodShareIt',
+    title: 'FoodShare',
     description: 'Real-time food donation platform connecting donors with receivers, built with Node.js and MongoDB.',
     tags: ['Node.js', 'MongoDB', 'Express'],
     image: '/images/foodshare.svg',
@@ -24,12 +24,12 @@ const projectsData = [
   },
   {
     id: 3,
-    type: 'REACT APP',
-    title: 'Auth App',
-    description: 'Secure authentication application with protected routes and session management.',
-    tags: ['React', 'Node.js', 'JWT'],
-    image: '/images/work-authapp.svg',
-    url: 'https://github.com/ignit-fury'
+    type: 'AI PROJECT',
+    title: 'Ai Faceless Video Generator',
+    description: 'AI-powered video generation tool for creating faceless videos.',
+    tags: ['Python', 'ComfyUI', 'Piper TTS','FFmpeg','Ollama'],
+    image: '/images/Ai-Faceless-Video-Generator.svg',
+    url: 'https://github.com/ignit-fury/AiFaceless-vid.git'
   },
   {
     id: 4,
