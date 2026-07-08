@@ -11,7 +11,7 @@ const projectsData = [
     description: 'Digital platform for a café featuring menu management, reservations, and admin dashboard.',
     tags: ['HTML', 'CSS', 'JavaScript'],
     image: '/images/heart-brew-hero.webp',
-    url: 'https://heartandbrew.com'
+    url: 'https://cafe-kappa-jade.vercel.app/'
   },
   {
     id: 2,
