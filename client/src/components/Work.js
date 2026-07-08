@@ -19,8 +19,8 @@ const projectsData = [
     title: 'FoodShareIt',
     description: 'Real-time food donation platform connecting donors with receivers, built with Node.js and MongoDB.',
     tags: ['Node.js', 'MongoDB', 'Express'],
-    image: '/images/work-foodshareit.svg',
-    url: 'https://foodshareit.com'
+    image: '/images/foodshare.svg',
+    url: 'https://foodshare-six.vercel.app/'
   },
   {
     id: 3,
