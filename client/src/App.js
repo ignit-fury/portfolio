@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import ErrorBoundary from './components/ErrorBoundary';
+import LoadingScreen from './components/LoadingScreen';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Work from './components/Work';
@@ -13,6 +14,7 @@ import SplashCursor from './components/SplashCursor';
 import './styles/App.css';
 
 function App() {
+  const [ready, setReady] = useState(false);
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
@@ -25,27 +27,30 @@ function App() {
 
   return (
     <ErrorBoundary>
-      <div className="App">
-        <Navbar />
-        <Hero />
-        <AnimatedContent>
-          <Work />
-        </AnimatedContent>
-        <AnimatedContent>
-          <About />
-        </AnimatedContent>
-        <AnimatedContent>
-          <Skills />
-        </AnimatedContent>
-        <AnimatedContent>
-          <Contact />
-        </AnimatedContent>
-        <AnimatedContent>
-          <Footer />
-        </AnimatedContent>
-        <ScrollToTop />
-        {isDark && <SplashCursor />}
-      </div>
+      <LoadingScreen onComplete={() => setReady(true)} />
+      {ready && (
+        <div className="App">
+          <Navbar />
+          <Hero />
+          <AnimatedContent>
+            <Work />
+          </AnimatedContent>
+          <AnimatedContent>
+            <About />
+          </AnimatedContent>
+          <AnimatedContent>
+            <Skills />
+          </AnimatedContent>
+          <AnimatedContent>
+            <Contact />
+          </AnimatedContent>
+          <AnimatedContent>
+            <Footer />
+          </AnimatedContent>
+          <ScrollToTop />
+          {isDark && <SplashCursor />}
+        </div>
+      )}
     </ErrorBoundary>
   );
 }

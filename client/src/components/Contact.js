@@ -10,6 +10,7 @@ const Contact = () => {
   const [errors, setErrors] = useState({});
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitSuccess, setSubmitSuccess] = useState(false);
+  const [submitError, setSubmitError] = useState('');
 
   const validateForm = () => {
     const newErrors = {};
@@ -61,16 +62,34 @@ const Contact = () => {
     }
     
     setIsSubmitting(true);
+    setSubmitError('');
     
-    // Simulate form submission
-    setTimeout(() => {
-      setIsSubmitting(false);
-      setSubmitSuccess(true);
-      setFormData({ name: '', email: '', message: '' });
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          access_key: process.env.REACT_APP_WEB3FORMS_KEY,
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        }),
+      });
       
-      // Reset success message after 3 seconds
-      setTimeout(() => setSubmitSuccess(false), 3000);
-    }, 1500);
+      const result = await response.json();
+      
+      if (result.success) {
+        setSubmitSuccess(true);
+        setFormData({ name: '', email: '', message: '' });
+        setTimeout(() => setSubmitSuccess(false), 5000);
+      } else {
+        setSubmitError('Something went wrong. Please try again or reach me via the links below.');
+      }
+    } catch {
+      setSubmitError('Network error. Please check your connection and try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -88,7 +107,13 @@ const Contact = () => {
         
         {submitSuccess && (
           <div className="success-message" role="status" aria-live="polite">
-            Thanks! This portfolio form is in demo mode — your message wasn't actually sent. Reach me via the links below.
+            Thanks for reaching out! I'll get back to you soon.
+          </div>
+        )}
+        
+        {submitError && (
+          <div className="error-message" role="alert">
+            {submitError}
           </div>
         )}
         
