@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import ErrorBoundary from './components/ErrorBoundary';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
@@ -13,6 +13,16 @@ import SplashCursor from './components/SplashCursor';
 import './styles/App.css';
 
 function App() {
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const mq = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDark(mq.matches);
+    const handler = (e) => setIsDark(e.matches);
+    mq.addEventListener('change', handler);
+    return () => mq.removeEventListener('change', handler);
+  }, []);
+
   return (
     <ErrorBoundary>
       <div className="App">
@@ -34,7 +44,7 @@ function App() {
           <Footer />
         </AnimatedContent>
         <ScrollToTop />
-        <SplashCursor />
+        {isDark && <SplashCursor />}
       </div>
     </ErrorBoundary>
   );

@@ -18,7 +18,7 @@
   font-family: var(--font-display);
   font-size: 24px;
   font-weight: 900;
-  color: var(--color-orange-accent);
+  color: var(--color-terracotta-accent);
 }
 
 .hamburger {
@@ -39,7 +39,7 @@
   display: block;
   width: 24px;
   height: 2px;
-  background: var(--color-foreground-white);
+  background: var(--color-foreground-ink);
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -75,13 +75,13 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: var(--color-orange-accent);
+  background: var(--color-terracotta-accent);
   transition: width 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-  color: var(--color-foreground-white);
+  color: var(--color-foreground-ink);
 }
 
 .nav-link:hover::after,
@@ -90,7 +90,7 @@
 }
 
 .nav-number {
-  color: var(--color-orange-accent);
+  color: var(--color-terracotta-accent);
   margin-right: var(--space-2);
 }
 
@@ -103,7 +103,7 @@
 .status-dot {
   width: 8px;
   height: 8px;
-  background: var(--color-orange-accent);
+  background: var(--color-terracotta-accent);
   border-radius: 50%;
   animation: pulse 2s infinite;
 }

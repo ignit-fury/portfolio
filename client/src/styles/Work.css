@@ -52,6 +52,7 @@
   padding: var(--space-5);
   border: 1px solid var(--color-grid-line-border);
   background: var(--color-surface-card);
+  box-shadow: 0 1px 3px rgba(31, 28, 24, 0.06);
   transition: border-color 0.3s ease, background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -59,7 +60,7 @@
   border-color: var(--color-hover-border);
   background: var(--color-secondary-surface);
   transform: translateY(-4px);
-  box-shadow: 0 8px 32px rgba(193, 99, 61, 0.1);
+  box-shadow: 0 8px 20px rgba(193, 99, 61, 0.12);
 }
 
 .project-image {
@@ -98,14 +99,14 @@
 .project-type {
   font-size: 10px;
   letter-spacing: 2px;
-  color: var(--color-orange-accent);
+  color: var(--color-terracotta-accent);
 }
 
 .project-title {
-  font-family: var(--font-display);
-  font-size: 24px;
-  font-weight: 800;
-  letter-spacing: -0.75px;
+  font-family: var(--font-sans);
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
   margin: var(--space-1) 0;
   white-space: nowrap;
   overflow: hidden;
@@ -143,7 +144,7 @@
 }
 
 .project-card:hover .project-arrow {
-  color: var(--color-orange-accent);
+  color: var(--color-terracotta-accent);
   transform: translateX(4px);
 }
 
@@ -171,6 +172,6 @@
     margin-top: var(--space-3);
     font-size: 12px;
     letter-spacing: 2px;
-    color: var(--color-orange-accent);
+    color: var(--color-terracotta-accent);
   }
 }

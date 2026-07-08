@@ -6,7 +6,7 @@
   height: 48px;
   background: var(--color-secondary-surface);
   border: 1px solid var(--color-grid-line-border);
-  color: var(--color-orange-accent);
+  color: var(--color-terracotta-accent);
   font-size: 20px;
   cursor: pointer;
   opacity: 0;
@@ -23,9 +23,9 @@
 }
 
 .scroll-to-top:hover {
-  background: var(--color-orange-accent);
+  background: var(--color-terracotta-accent);
   color: var(--color-background-base);
-  border-color: var(--color-orange-accent);
+  border-color: var(--color-terracotta-accent);
 }
 
 @media (max-width: 768px) {
