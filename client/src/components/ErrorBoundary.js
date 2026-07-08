@@ -19,13 +19,13 @@ class ErrorBoundary extends Component {
       return (
         <div style={{
           padding: '20px',
-          background: '#1f1f1f',
-          border: '1px solid #262626',
-          color: '#a3a3a3',
+          background: '#ffffff',
+          border: '1px solid #ded9cd',
+          color: '#6b6560',
           textAlign: 'center',
           margin: '20px'
         }}>
-          <h3 style={{ color: '#f97316', marginBottom: '10px' }}>Something went wrong</h3>
+          <h3 style={{ color: '#c1633d', marginBottom: '10px' }}>Something went wrong</h3>
           <p>{this.state.error?.message || 'An unexpected error occurred'}</p>
           <button 
             onClick={() => this.setState({ hasError: false, error: null })}
@@ -33,8 +33,8 @@ class ErrorBoundary extends Component {
               marginTop: '15px',
               padding: '8px 16px',
               background: 'transparent',
-              border: '1px solid #f97316',
-              color: '#f97316',
+              border: '1px solid #c1633d',
+              color: '#c1633d',
               cursor: 'pointer'
             }}
           >

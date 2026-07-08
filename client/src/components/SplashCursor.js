@@ -23,7 +23,7 @@ const SplashCursor = () => {
 
     const spawn = (x, y) => {
       const count = 18;
-      const color = `hsl(${24}, 97%, 59%)`; // orange accent #f97316
+      const color = `hsl(${18}, 51%, 49%)`; // terracotta accent #c1633d
       for (let i = 0; i < count; i++) {
         const angle = (Math.PI * 2 * i) / count + Math.random() * 0.4;
         const speed = 2 + Math.random() * 4;

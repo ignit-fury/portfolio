@@ -43,7 +43,7 @@ const LazyImage = ({ src, alt, className }) => {
               left: 0,
               right: 0,
               bottom: 0,
-              background: '#1f1f1f',
+              background: '#f0ede8',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center'
@@ -51,7 +51,7 @@ const LazyImage = ({ src, alt, className }) => {
               <div style={{
                 width: '20px',
                 height: '20px',
-                border: '2px solid #262626',
+                border: '2px solid #ded9cd',
                 borderTopColor: '#f97316',
                 borderRadius: '50%',
                 animation: 'spin 1s linear infinite'

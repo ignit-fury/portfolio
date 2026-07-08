@@ -1,16 +1,16 @@
 :root {
-  --color-background-base: #050505;
-  --color-surface-card: #121212;
-  --color-grid-line-border: #262626;
-  --color-foreground-white: #f5f5f5;
-  --color-orange-accent: #f97316;
-  --color-success: #22c55e;
-  --color-error: #ef4444;
-  --color-muted-text: #a3a3a3;
-  --color-subtle-text: #737373;
-  --color-secondary-surface: #1f1f1f;
-  --color-hover-border: #404040;
-  --color-light-border: #e5e5e5;
+  --color-background-base: #f7f5f0;
+  --color-surface-card: #ffffff;
+  --color-grid-line-border: #ded9cd;
+  --color-foreground-white: #1f1c18;
+  --color-orange-accent: #c1633d;
+  --color-success: #2e7d4f;
+  --color-error: #b83b3b;
+  --color-muted-text: #6b6560;
+  --color-subtle-text: #9a948e;
+  --color-secondary-surface: #f0ede8;
+  --color-hover-border: #c5bfb7;
+  --color-light-border: #e8e4de;
 
   --font-display: 'Cabinet Grotesk', sans-serif;
   --font-body: 'JetBrains Mono', monospace;

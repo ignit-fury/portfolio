@@ -22,7 +22,7 @@
   height: 380px;
   top: 5%;
   left: 10%;
-  background: radial-gradient(circle, #f97316, transparent 70%);
+  background: radial-gradient(circle, #c1633d, transparent 70%);
 }
 
 .blob-2 {
@@ -30,7 +30,7 @@
   height: 320px;
   top: 40%;
   right: 8%;
-  background: radial-gradient(circle, #fb923c, transparent 70%);
+  background: radial-gradient(circle, #d4845e, transparent 70%);
 }
 
 .blob-3 {
@@ -38,5 +38,5 @@
   height: 280px;
   bottom: 5%;
   left: 35%;
-  background: radial-gradient(circle, #fdba74, transparent 70%);
+  background: radial-gradient(circle, #e0a583, transparent 70%);
 }
