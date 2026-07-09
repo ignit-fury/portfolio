@@ -31,16 +31,8 @@ const projectsData = [
     tags: ['Python', 'ComfyUI', 'Piper TTS','FFmpeg','Ollama'],
     image: '/images/Ai-Faceless-Video-Generator.svg',
     url: 'https://github.com/ignit-fury/AiFaceless-vid.git'
-  },
-  {
-    id: 4,
-    type: 'AI PROJECT',
-    title: 'Diabetes Prediction',
-    description: 'Machine learning model for predicting diabetes using Python and scikit-learn.',
-    tags: ['Python', 'ML', 'scikit-learn'],
-    image: '/images/work-diabetes.svg',
-    url: 'https://github.com/ignit-fury/diabetes-prediction'
   }
+  
 ];
 
 const Work = () => {
