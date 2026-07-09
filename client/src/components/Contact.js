@@ -102,7 +102,7 @@ const Contact = () => {
 
       <div className="contact-content">
         <p className="contact-text">
-          I'm currently open to freelance projects and full-time opportunities. Let's build something great together.
+          We're currently open to freelance projects and full-time opportunities. Let's build something great together.
         </p>
         
         {submitSuccess && (

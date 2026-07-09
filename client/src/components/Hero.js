@@ -11,7 +11,7 @@ const Hero = () => {
       <div className="hero-content">
         <h1 className="hero-line">
           <SplitText
-            text="I BUILD"
+            text="WE BUILD"
             tag="span"
             className="hero-line-text"
             splitType="chars"
@@ -49,7 +49,7 @@ const Hero = () => {
         </h1>
       </div>
       <div className="hero-sub">
-        <p className="hero-subtitle">Full-Stack Developer & UI Designer</p>
+        <p className="hero-subtitle">Full-Stack Developers & UI Designers</p>
         <p className="hero-location">Gujarat, India</p>
       </div>
       <div className="hero-scroll" aria-hidden="true">

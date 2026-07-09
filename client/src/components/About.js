@@ -6,29 +6,29 @@ const About = () => {
     <section id="about" className="section">
       <div className="section-header">
         <span className="section-label">02</span>
-        <h2 className="section-title">ABOUT ME</h2>
+        <h2 className="section-title">ABOUT US</h2>
         <div className="section-line"></div>
       </div>
 
       <div className="about-grid">
         <div className="about-text">
           <p className="about-lead">
-            I'm a passionate full-stack developer who loves building clean, functional web applications.
+            We're a team of full-stack developers passionate about building well-functioning, clean web applications.
           </p>
           <p className="about-body">
-            Currently pursuing my studies in Gujarat, I spend my time crafting digital experiences that solve real-world problems. From food donation platforms to café management systems, I focus on building tools that make a difference.
+            Headquartered in Gujarat, our team works diligently to develop digital products that solve practical problems in society — such as our recently developed food donation portal and the café management system.
           </p>
           <p className="about-body">
-            My approach combines modern frameworks with thoughtful design, ensuring every project is both performant and visually compelling.
+            The blend of the latest technologies, design-oriented approach, and a team spirit ensures high-performing, scalable, and aesthetically appealing web solutions.
           </p>
         </div>
         <div className="about-stats">
           <div className="stat">
-            <span className="stat-number">10+</span>
+            <span className="stat-number">5+</span>
             <span className="stat-label">PROJECTS BUILT</span>
           </div>
           <div className="stat">
-            <span className="stat-number">3+</span>
+            <span className="stat-number">2+</span>
             <span className="stat-label">YEARS CODING</span>
           </div>
           <div className="stat">
