@@ -5,7 +5,7 @@ const TEAM = [
   {
     name: "Prem Patel",
     role: "Full-stack & backend",
-    initials: "PP",
+    initials: "XZ",
     github: "https://github.com/ignit-fury",
     linkedin: "https://www.linkedin.com/in/prem-patel-9742aa388/",
   },
