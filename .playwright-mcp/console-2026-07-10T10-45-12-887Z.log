@@ -1,0 +1,5 @@
+[     630ms] [INFO] %cDownload the React DevTools for a better development experience: https://reactjs.org/link/react-devtools font-weight:bold @ http://localhost:3851/static/js/bundle.js:39199
+[   37605ms] [ERROR] WebSocket connection to 'ws://localhost:3851/ws' failed:  @ http://localhost:3851/static/js/bundle.js:45287
+[   38641ms] [ERROR] WebSocket connection to 'ws://localhost:3851/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3851/static/js/bundle.js:45287
+[   40716ms] [ERROR] WebSocket connection to 'ws://localhost:3851/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3851/static/js/bundle.js:45287
+[   44736ms] [ERROR] WebSocket connection to 'ws://localhost:3851/ws' failed: Error in connection establishment: net::ERR_CONNECTION_REFUSED @ http://localhost:3851/static/js/bundle.js:45287

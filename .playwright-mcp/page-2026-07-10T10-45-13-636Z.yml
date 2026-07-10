@@ -1,0 +1,7 @@
+- status "Loading portfolio" [ref=e1]:
+  - generic [ref=e2]:
+    - paragraph [ref=e3]: COMPILING PREM.PATEL
+    - generic [ref=e4]:
+      - generic [ref=e5]: "{"
+      - generic [ref=e6]: "02"
+      - generic [ref=e7]: "}"
