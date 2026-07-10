@@ -4,7 +4,7 @@ import "../styles/LoadingScreen.css";
 export default function LoadingScreen({
   progress = null,
   minDuration = 1400,
-  label = "COMPILING XZENSTUDIO",
+  label = "COMPILING XZEN STUDIO",
   onComplete = () => {},
 }) {
   const [displayProgress, setDisplayProgress] = useState(0);

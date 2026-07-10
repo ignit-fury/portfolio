@@ -1,4 +1,4 @@
-# xzenstudio — Developer Portfolio
+# Xzen Studio — Developer Portfolio
 
 A warm, light-themed team developer portfolio built with **React**, **Express.js**, and **Node.js**.
 
@@ -11,7 +11,7 @@ A warm, light-themed team developer portfolio built with **React**, **Express.js
 
 ## Live Demo
 
-**[View Portfolio →](https://xzenstudio.dev)**
+**[View Portfolio →](https://Xzen Studio.dev)**
 
 ---
 
@@ -132,12 +132,12 @@ Open `client/src/components/Team.js` and add to the `TEAM` array:
 
 | Platform | Link |
 |----------|------|
-| Email | [hello@xzenstudio.dev](mailto:hello@xzenstudio.dev) |
+| Email | [hello@Xzen Studio.dev](mailto:hello@Xzen Studio.dev) |
 | GitHub | [ignit-fury](https://github.com/ignit-fury) |
-| LinkedIn | [xzenstudio](https://www.linkedin.com/in/prem-patel-9742aa388/) |
+| LinkedIn | [Xzen Studio](https://www.linkedin.com/in/prem-patel-9742aa388/) |
 
 ---
 
 ## License
 
-MIT © 2026 xzenstudio
+MIT © 2026 Xzen Studio

@@ -1,6 +1,6 @@
-# xzenstudio — Developer Portfolio · DESIGN.md
+# Xzen Studio — Developer Portfolio · DESIGN.md
 
-Design system and visual language for the xzenstudio team portfolio
+Design system and visual language for the Xzen Studio team portfolio
 (`portfolio`). Single-page React app (Create React App) styled with
 plain CSS custom properties — no UI framework.
 
