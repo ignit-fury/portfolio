@@ -1,6 +1,6 @@
-# Prem Patel — Developer Portfolio
+# xzenstudio — Developer Portfolio
 
-A high-contrast, dark-first developer portfolio built with **React**, **Express.js**, and **Node.js**.
+A warm, light-themed team developer portfolio built with **React**, **Express.js**, and **Node.js**.
 
 ![Portfolio](https://img.shields.io/badge/Status-Active-brightgreen)
 ![React](https://img.shields.io/badge/React-18-61DAFB?logo=react)
@@ -11,18 +11,21 @@ A high-contrast, dark-first developer portfolio built with **React**, **Express.
 
 ## Live Demo
 
-**[View Portfolio →](https://prempatel.dev)**
+**[View Portfolio →](https://xzenstudio.dev)**
 
 ---
 
 ## Features
 
-- Dark theme with orange accent (`#f97316`)
-- Grid overlay with sharp, structural aesthetic
+- Paper & terracotta light theme (`#c1633d` accent)
+- Grid overlay with clean, structural aesthetic
 - Responsive design (mobile, tablet, desktop)
-- Smooth scroll animations
+- Smooth scroll animations with Lenis
+- ScrollStack project cards (pinned stacking scroll)
 - Lazy-loaded project images
-- Contact form with validation
+- Team member section with proximity hover effect
+- Loading screen with animated progress
+- Contact section with direct email CTA
 - Active navigation state on scroll
 - Mobile hamburger menu
 - Scroll-to-top button
@@ -36,8 +39,9 @@ A high-contrast, dark-first developer portfolio built with **React**, **Express.
 |-------|-----------|
 | Frontend | React 18, CSS3, CSS Variables |
 | Backend | Express.js, Node.js |
-| Fonts | Cabinet Grotesk, JetBrains Mono |
-| Icons | Unicode / Custom SVG |
+| Fonts | Cabinet Grotesk, JetBrains Mono, Inter |
+| Icons | Custom SVG |
+| Email | Web3Forms |
 
 ---
 
@@ -72,10 +76,12 @@ portfolio/
 │       │   ├── Hero.js
 │       │   ├── Work.js      # ← Add projects here
 │       │   ├── About.js
+│       │   ├── Team.js      # Team member roster
 │       │   ├── Skills.js    # ← Add skills here
 │       │   ├── Contact.js
 │       │   ├── Footer.js
 │       │   ├── ScrollToTop.js
+│       │   ├── LoadingScreen.js
 │       │   ├── LazyImage.js
 │       │   └── ErrorBoundary.js
 │       └── styles/          # CSS files
@@ -106,17 +112,32 @@ Then add your screenshot to `client/public/images/`.
 
 ---
 
+## Adding a Team Member
+
+Open `client/src/components/Team.js` and add to the `TEAM` array:
+
+```js
+{
+  name: "Team Member Name",
+  role: "Role & focus area",
+  initials: "TM",
+  github: "https://github.com/handle",
+  linkedin: "https://linkedin.com/in/handle",
+}
+```
+
+---
+
 ## Contact
 
 | Platform | Link |
 |----------|------|
-| Email | [prem.patel9224@gmail.com](mailto:prem.patel9224@gmail.com) |
+| Email | [hello@xzenstudio.dev](mailto:hello@xzenstudio.dev) |
 | GitHub | [ignit-fury](https://github.com/ignit-fury) |
-| LinkedIn | [Prem Patel](https://www.linkedin.com/in/prem-patel-9742aa388/) |
-| Instagram | [p.prem._](https://www.instagram.com/p.prem._/) |
+| LinkedIn | [xzenstudio](https://www.linkedin.com/in/prem-patel-9742aa388/) |
 
 ---
 
 ## License
 
-MIT © 2026 Prem Patel
+MIT © 2026 xzenstudio
