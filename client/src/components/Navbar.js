@@ -44,7 +44,7 @@ const Navbar = () => {
   return (
     <nav className="nav" role="navigation" aria-label="Main navigation">
       <a href="#" className="nav-logo" onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}>
-        XZ
+        <img src="/logo.svg" alt="Xzen Studio" className="nav-logo-img" />
       </a>
       
       <button 
