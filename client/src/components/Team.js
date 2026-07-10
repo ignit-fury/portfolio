@@ -5,16 +5,16 @@ const TEAM = [
   {
     name: "Prem Patel",
     role: "Full-stack & backend",
-    initials: "XZ",
+    initials: "PP",
     github: "https://github.com/ignit-fury",
-    linkedin: "https://www.linkedin.com/in/prem-patel-9742aa388/",
+    linkedin: "https://www.linkedin.com/in/ignitfury/",
   },
   {
     name: "Teammate Two",
     role: "Frontend & UI",
-    initials: "T2",
-    github: "https://github.com/handle-2",
-    linkedin: "https://linkedin.com/in/handle-2",
+    initials: "SR",
+    github: "https://github.com/shalin0078",
+    linkedin: "https://www.linkedin.com/in/shalin-rathod-301400305/",
   },
   {
     name: "Teammate Three",
