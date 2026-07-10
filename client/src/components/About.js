@@ -1,4 +1,5 @@
 import React from 'react';
+import Team from './Team';
 import '../styles/About.css';
 
 const About = () => {
@@ -24,11 +25,11 @@ const About = () => {
         </div>
         <div className="about-stats">
           <div className="stat">
-            <span className="stat-number">5+</span>
+            <span className="stat-number">10+</span>
             <span className="stat-label">PROJECTS BUILT</span>
           </div>
           <div className="stat">
-            <span className="stat-number">2+</span>
+            <span className="stat-number">3+</span>
             <span className="stat-label">YEARS CODING</span>
           </div>
           <div className="stat">
@@ -37,6 +38,8 @@ const About = () => {
           </div>
         </div>
       </div>
+
+      <Team />
     </section>
   );
 };

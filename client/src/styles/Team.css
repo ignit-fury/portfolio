@@ -1,0 +1,136 @@
+.team-card {
+  background: var(--color-background-base);
+  border: 1px solid var(--color-grid-line-border);
+  border-radius: 12px;
+  padding: 32px 28px;
+  margin-top: var(--space-10, 40px);
+}
+
+.team-eyebrow-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.team-eyebrow {
+  font-family: var(--font-body, "JetBrains Mono", monospace);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: var(--color-terracotta-text, #a84f2e);
+  white-space: nowrap;
+}
+
+.team-eyebrow-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-grid-line-border, #e2ddd1);
+}
+
+.team-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--color-grid-line-border, #e2ddd1);
+}
+
+.team-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 4px;
+  border-bottom: 1px solid var(--color-grid-line-border, #e2ddd1);
+  transition: background 0.2s ease;
+}
+
+.team-row:hover {
+  background: var(--color-secondary-surface, #f0ede6);
+}
+
+.team-avatar {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  border: 1.5px solid var(--color-terracotta-accent, #c1633d);
+  color: var(--color-terracotta-text, #a84f2e);
+  font-family: var(--font-body, "JetBrains Mono", monospace);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.team-identity {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.team-name {
+  font-family: var(--font-sans, "Inter", sans-serif);
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.2px;
+  color: var(--color-foreground-ink, #1f1c18);
+}
+
+.team-role {
+  font-family: var(--font-body, "JetBrains Mono", monospace);
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--color-subtle-text, #726b5f);
+}
+
+.team-links {
+  display: flex;
+  gap: 16px;
+  flex-shrink: 0;
+}
+
+.team-links a {
+  font-family: var(--font-body, "JetBrains Mono", monospace);
+  font-size: 10.5px;
+  color: var(--color-muted-text, #5c574c);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.team-links a:hover {
+  color: var(--color-terracotta-text, #a84f2e);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .team-row {
+    transition: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .team-card {
+    padding: 24px 18px;
+  }
+
+  .team-row {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .team-identity {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .team-links {
+    margin-left: 54px;
+  }
+}
