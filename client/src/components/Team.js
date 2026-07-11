@@ -10,25 +10,11 @@ const TEAM = [
     linkedin: "https://www.linkedin.com/in/ignitfury/",
   },
   {
-    name: "Teammate Two",
+    name: "Shalin Rathod",
     role: "Frontend & UI",
     initials: "SR",
     github: "https://github.com/shalin0078",
     linkedin: "https://www.linkedin.com/in/shalin-rathod-301400305/",
-  },
-  {
-    name: "Teammate Three",
-    role: "Design & content",
-    initials: "T3",
-    github: "https://github.com/handle-3",
-    linkedin: "https://linkedin.com/in/handle-3",
-  },
-  {
-    name: "Teammate Four",
-    role: "Testing & deployment",
-    initials: "T4",
-    github: "https://github.com/handle-4",
-    linkedin: "https://linkedin.com/in/handle-4",
   },
 ];
 
