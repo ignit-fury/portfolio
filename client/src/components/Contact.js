@@ -6,7 +6,7 @@ const Contact = () => {
     <section id="contact" className="section">
       <div className="contact-card">
         <div className="contact-header">
-          <span className="section-label">05</span>
+          <span className="section-label">04</span>
           <span className="contact-header-title">CONTACT</span>
           <div className="section-line"></div>
         </div>
