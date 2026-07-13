@@ -36,7 +36,7 @@ const projectsData = [
     id: 4,
     type: 'MOBILE APP',
     title: 'Smidhi App',
-    tags: ['React Native', 'React', 'Node.js'],
+    tags: ['React Native', 'Java', 'CSS', 'Python'],
     image: '/images/smidhi.svg',
     url: '#'
   }
