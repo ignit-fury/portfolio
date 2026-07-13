@@ -11,7 +11,7 @@ A warm, light-themed team developer portfolio built with **React**, **Express.js
 
 ## Live Demo
 
-**[View Portfolio →](https://Xzen Studio.dev)**
+**[View Portfolio →](xzenstudios.vercel.app)**
 
 ---
 
@@ -132,7 +132,7 @@ Open `client/src/components/Team.js` and add to the `TEAM` array:
 
 | Platform | Link |
 |----------|------|
-| Email | [hello@Xzen Studio.dev](mailto:hello@Xzen Studio.dev) |
+| Email | [prem.patel9224@gmail.com](mailto:prem.patel9224@gmail.com) |
 | GitHub | [ignit-fury](https://github.com/ignit-fury) |
 | LinkedIn | [Xzen Studio](https://www.linkedin.com/in/prem-patel-9742aa388/) |
 
