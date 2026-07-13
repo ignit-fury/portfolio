@@ -31,8 +31,15 @@ const projectsData = [
     tags: ['Python', 'ComfyUI', 'Piper TTS','FFmpeg','Ollama'],
     image: '/images/Ai-Faceless-Video-Generator.svg',
     url: 'https://github.com/ignit-fury/AiFaceless-vid.git'
+  },
+  {
+    id: 4,
+    type: 'MOBILE APP',
+    title: 'Smidhi App',
+    tags: ['React Native', 'React', 'Node.js'],
+    image: '/images/smidhi.svg',
+    url: '#'
   }
-  
 ];
 
 const Work = () => {
@@ -100,7 +107,7 @@ const Work = () => {
               <div className="project-info">
                 <span className="project-type">{project.type}</span>
                 <h3 className="project-title">{project.title}</h3>
-                <p className="project-desc">{project.description}</p>
+                {project.description && <p className="project-desc">{project.description}</p>}
                 <div className="project-tags">
                   {project.tags.map((tag, index) => (
                     <span className="tag" key={index}>{tag}</span>
