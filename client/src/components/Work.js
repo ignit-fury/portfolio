@@ -39,6 +39,15 @@ const projectsData = [
     tags: ['React Native', 'Java', 'CSS', 'Python'],
     image: '/images/smidhi.svg',
     url: '#'
+  },
+  {
+    id: 5,
+    type: 'WEB PLATFORM',
+    title: 'IRONCORE Gym',
+    description: 'Dark-themed gym landing page with a real trial-signup form, animated stats, and a before/after comparison slider.',
+    tags: ['React', 'Vite', 'Framer Motion'],
+    image: '/images/ironcore-hero.webp',
+    url: 'https://gym-page-smoky.vercel.app/'
   }
 ];
 
