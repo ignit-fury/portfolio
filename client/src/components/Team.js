@@ -21,6 +21,11 @@ const TEAM = [
     role: "Developer",
     initials: "KP",
   },
+  {
+    name: "Sharandev Nair",
+    role: "Sales Executive",
+    initials: "SN",
+  },
 ];
 
 const PROXIMITY_RADIUS = 90;
