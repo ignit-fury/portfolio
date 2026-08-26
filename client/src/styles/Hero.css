@@ -56,12 +56,12 @@
 }
 
 .hero-subtitle {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: var(--color-muted-text);
 }
 
 .hero-location {
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   letter-spacing: 1.2px;
   color: var(--color-subtle-text);
 }
@@ -77,7 +77,7 @@
 }
 
 .scroll-label {
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   letter-spacing: 2px;
   color: var(--color-subtle-text);
   writing-mode: vertical-rl;

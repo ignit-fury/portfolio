@@ -6,7 +6,7 @@
 
 .about-lead {
   font-family: var(--font-display);
-  font-size: 24px;
+  font-size: var(--font-size-xl);
   font-weight: 800;
   line-height: 32px;
   letter-spacing: -0.6px;
@@ -14,7 +14,7 @@
 }
 
 .about-body {
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: var(--color-muted-text);
   margin-bottom: var(--space-6);
   max-width: 600px;
@@ -43,14 +43,14 @@
 
 .stat-number {
   font-family: var(--font-display);
-  font-size: 48px;
+  font-size: var(--font-size-2xl);
   font-weight: 900;
   letter-spacing: -2.4px;
   color: var(--color-terracotta-accent);
 }
 
 .stat-label {
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   letter-spacing: 2px;
   color: var(--color-subtle-text);
 }

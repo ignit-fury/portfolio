@@ -18,7 +18,7 @@
 }
 
 .skill-title {
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   letter-spacing: 2px;
   color: var(--color-terracotta-accent);
   margin-bottom: var(--space-6);

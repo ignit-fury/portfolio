@@ -114,6 +114,6 @@
   }
 
   .contact-headline {
-    font-size: 22px;
+    font-size: var(--font-size-lg);
   }
 }

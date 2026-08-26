@@ -55,6 +55,13 @@ const Work = () => {
   const sectionRef = useRef(null);
 
   useEffect(() => {
+    const cards = sectionRef.current?.querySelectorAll('.project-card');
+
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      cards?.forEach(card => card.classList.add('fade-in', 'visible'));
+      return;
+    }
+
     const observerOptions = {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
@@ -64,11 +71,11 @@ const Work = () => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
         }
       });
     }, observerOptions);
 
-    const cards = sectionRef.current?.querySelectorAll('.project-card');
     cards?.forEach(card => {
       card.classList.add('fade-in');
       observer.observe(card);

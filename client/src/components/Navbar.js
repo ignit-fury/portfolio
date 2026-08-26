@@ -91,7 +91,7 @@ const Navbar = () => {
 
       <div className={`nav-status ${isMenuOpen ? 'open' : ''}`}>
         <span className="status-dot"></span>
-        <span className="status-text">AVAILABLE FOR WORK</span>
+        <span className="status-text">Available for work</span>
       </div>
     </nav>
   );

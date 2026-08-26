@@ -3,7 +3,7 @@
   border: 1px solid var(--color-grid-line-border);
   border-radius: 12px;
   padding: 32px 28px;
-  margin-top: var(--space-10, 40px);
+  margin-top: var(--space-6, 24px);
 }
 
 .team-eyebrow-row {
@@ -60,7 +60,7 @@
   border: 1.5px solid var(--color-terracotta-accent, #c1633d);
   color: var(--color-terracotta-text, #a84f2e);
   font-family: var(--font-body, "JetBrains Mono", monospace);
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   font-weight: 600;
 }
 
@@ -75,7 +75,7 @@
 
 .team-name {
   font-family: var(--font-sans, "Inter", sans-serif);
-  font-size: 16px;
+  font-size: var(--font-size-base);
   font-weight: 700;
   letter-spacing: -0.2px;
   color: var(--color-foreground-ink, #1f1c18);
@@ -83,7 +83,7 @@
 
 .team-role {
   font-family: var(--font-body, "JetBrains Mono", monospace);
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   letter-spacing: 1px;
   text-transform: uppercase;
   color: var(--color-subtle-text, #726b5f);

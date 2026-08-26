@@ -12,13 +12,13 @@
 }
 
 .footer-name {
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   letter-spacing: 1.2px;
   color: rgba(255, 255, 255, 0.45);
 }
 
 .footer-tagline {
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   color: rgba(255, 255, 255, 0.3);
 }
 

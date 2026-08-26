@@ -64,7 +64,7 @@
 }
 
 .nav-link {
-  font-size: 12px;
+  font-size: var(--font-size-sm);
   letter-spacing: 2.4px;
   color: var(--color-muted-text);
   transition: color 0.3s ease;
@@ -117,7 +117,7 @@
 }
 
 .status-text {
-  font-size: 10px;
+  font-size: var(--font-size-xs);
   letter-spacing: 2px;
   color: var(--color-muted-text);
 }
