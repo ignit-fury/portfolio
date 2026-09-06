@@ -10,18 +10,6 @@ const TEAM = [
     linkedin: "https://www.linkedin.com/in/ignitfury/",
   },
   {
-    name: "Shalin Rathod",
-    role: "Full Stack Developer",
-    initials: "SR",
-    github: "https://github.com/shalin0078",
-    linkedin: "https://www.linkedin.com/in/shalin-rathod-301400305/",
-  },
-  {
-    name: "Kunj Patel",
-    role: "Developer",
-    initials: "KP",
-  },
-  {
     name: "Sharandev Nair",
     role: "Sales Executive",
     initials: "SN",
