@@ -33,14 +33,6 @@ const projectsData = [
     url: 'https://github.com/ignit-fury/AiFaceless-vid.git'
   },
   {
-    id: 4,
-    type: 'MOBILE APP',
-    title: 'Smidhi App',
-    tags: ['React Native', 'Java', 'CSS', 'Python'],
-    image: '/images/smidhi.svg',
-    url: '#'
-  },
-  {
     id: 5,
     type: 'WEB PLATFORM',
     title: 'IRONCORE Gym',
